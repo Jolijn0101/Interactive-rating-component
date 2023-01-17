@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#rating-start,
+#rating-end {
+  background-image: linear-gradient(hsla(213, 19%, 18%, 0.85), hsla(213, 19%, 18%, 0.25));
+  border-radius: 1em;
+  padding: 1.5em;
+  width: 20em;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+p {
+  color: hsl(217, 12%, 63%);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+
+/* styles rating start */
+#rating-start {
+  display: block;
+}
+svg {
+  color: hsl(25, 97%, 53%);
+}
+.circle img {
+  width: 0.9rem;
+  height: 0.8rem;
+  margin: 0.8rem;
+}
+.circle {
+  background-color: hsla(216, 12%, 54%, 0.2);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+#rating {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(217, 12%, 63%);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+}
+#rating .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+#rating .circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+#warning-text {
+  display: none;
+  color: red;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+button {
+  margin: 1.5rem 0 0.5rem 0;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 1.5rem;
+  width: 100%;
+  border: none;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 0.9rem;
+}
+button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+/* styles rating end */
+#rating-end {
+  text-align: center;
+  display: none;
+}
+#rating-end img {
+  margin: 1em 0 1.5em 0;
+}
+#rating-end span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 1.5em auto;
+  padding: 0.5em 1em;
+  display: block;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  color: hsl(25, 97%, 53%);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 1440px) {
+  #rating-start,
+  #rating-end {
+    width: 22em;
+  }
+}
